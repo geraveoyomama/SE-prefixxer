@@ -119,9 +119,9 @@ case $deletionimminent in
     ;;
 esac
 mkdir ~/SE-BACKUP
-#tar -cvf ~/SE-BACKUP/SpaceEngineersAppDataBackup.tar $gamedatapath
+tar -cvf ~/SE-BACKUP/SpaceEngineersAppDataBackup.tar $gamedatapath
 
 echo "Backup made and can be found in ~/SE-BACKUP."
 sleep 2
-#rm -rf $gamepath/244850
+rm -rf $gamepath/244850
 echo "Please set your "
