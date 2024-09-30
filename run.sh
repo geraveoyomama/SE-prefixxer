@@ -1,6 +1,9 @@
 #!/bin/bash
 clear
-echo "Hello and thank you for using SE-prefixxer."
+echo "Hello, you are using SE-prefixxer."
+sleep 1
+echo "In order to proceed it is advised to make a backup of your Space Engineers data."
+sleep 4
 WINETRICKSVER=$(winetricks --version|awk {'print $1'})
 #echo $WINETRICKSVER
 echo "Checking winetricks..."
@@ -26,8 +29,6 @@ case $ProtonGE in
     ;;
 esac
 
-sleep 1
-echo "In order to proceed it is advised to make a backup of your Space Engineers data."
 sleep 1
 autopath=$(find ~ -type d -name 244850 2> /dev/null |awk 'NR==1{print $1}')/pfx
 echo ""
